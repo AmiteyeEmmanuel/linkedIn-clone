@@ -1,0 +1,143 @@
+.widgets {
+    position: sticky;
+    top: 80px;
+    right: 80px;
+    background-color: white;
+    border-radius: 10px;
+    border: 1px solid lightgray;
+    height: fit-content;
+    padding-bottom: 10px;
+    margin-left:100px ;
+    width: 250px;
+}
+
+@media (max-width:768px) {
+    .widgets {
+        width:fit-content;
+        right: 0;
+        left: 0;
+        margin-left: 0;
+    }
+}
+
+.widgets__header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+.widgets__header > h3 {
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.widgets__header .icon {
+    height: 18px;
+    color: gray;
+}
+
+.widgets__article {
+    display: flex;
+    padding: 10px;
+    cursor: pointer;
+}
+
+
+.widgets__article:hover {
+    background-color: whitesmoke;
+}
+
+.article__left {
+    margin-right: 7px;
+}
+
+.article__left {
+    flex: 1;
+}
+
+
+.article__right > h4 {
+    color: black;
+    font-weight: 500;
+    font-size: 14px;
+}
+.article__right > p {
+    color: gray;
+    font-size: 14px;
+}
+
+.article__right > button{
+    border:  1px solid gray;
+    padding: 8px;
+    margin-top:5px;
+    border-radius:15px;
+    width: 100px;
+}
+
+.article__right > button > p {
+    font-size: 15px;
+}
+
+@media (max-width:768px) {
+    .article__left {
+        margin-right: 0;
+    }
+
+    .article__right {
+        padding: 0;
+        width: 200px;
+        position: relative;
+        right: 30px;
+    }
+}
+
+ .widget__post .widgetpost___body1 {
+    display: flex;
+    margin-top: 10px;
+}
+
+.widgetpost___body1 > p {
+    font-size: 16px;
+    font-weight: 500;
+    margin-right: 5px;
+}
+
+.widgetpost___body1 .icon {
+    font-size: 25px;
+    font-weight: bolder;
+    color: gray;
+    position: relative;
+    top: 1px;
+}
+
+.widget__post .widgetpost__ad {
+    margin-top: 10px;
+    text-align: right;
+    font-size: 14px;
+    color: black;
+    border: 1px solid whitesmoke;
+    box-shadow: inset;
+}
+
+.img {
+    width: 100%;
+}
+ .widgetpost__body2 > p {
+    font-size: 15px;
+    font-weight: 500;
+    text-align: center;
+    color: gray;
+    margin: 15px 0;
+}
+
+.widgetpost__body2 .avatar {
+    width: 80px;
+    height: 80px;
+}
+
+.widgetpost__body2 .widget__content {
+    display: flex;
+    font-size: 15px;
+    gap: 3px;
+}

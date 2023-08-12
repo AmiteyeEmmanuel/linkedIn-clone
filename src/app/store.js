@@ -1,8 +1,13 @@
-import { configureStore } from '@reduxjs/toolkit';
-import counterReducer from '../features/counter/counterSlice';
+import { configureStore, applyMiddleware } from '@reduxjs/toolkit';
+import { ThunkMiddleware } from 'redux-thunk';
+import userReducer from '../features/userSlice';
+import articleReducer from '../features/articleReducer';
+
+
 
 export const store = configureStore({
   reducer: {
-    counter: counterReducer,
+    user: userReducer,
+    postState: articleReducer,
   },
 });

@@ -1,0 +1,99 @@
+.feed {
+    width: 600px;
+    height: fit-content;
+}
+
+@media (max-width:768px) {
+    .feed {
+        width: fit-content;
+        max-width: 100px;
+    }
+}
+
+.feed__inputContainer {
+    background-color: #fff;
+    padding: 10px;
+    padding-bottom: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    /* display: flex;
+    justify-content: space-evenly; */
+}
+
+.feed__input {
+    border: 1px solid lightgray;
+    border-radius: 30px;
+    display: flex;
+    padding: 10px;
+    color: gray;
+    padding-left: 15px;
+}
+
+.feed__input > form {
+    display: flex;
+    width: 90%;
+}
+
+.feed__input > form > input {
+    border: 0.1px solid gray;
+    border-radius: 30px;
+    height: 50px;
+    flex: 1;
+    margin-left: 10px;
+    outline-width: 0;
+    font-weight: 600;
+
+}
+
+@media  (max-width:768px) {
+    .feed__input > form > input{
+        width: 250px;
+        height: 30px;
+    }    
+}
+
+.feed__input > form > button {
+    display: none;
+}
+
+.feed__inputOptions {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+@media (max-width:768px) {
+    .feed__inputOptions {
+        width: 100%;
+    }
+}
+
+.feed .photo {
+    height: 60px;
+    width: 60px;
+    position: relative;
+    top: -5px;
+}
+
+.feed .photo1 {
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+    position: relative;
+    top: -5px;
+    background-color: lightblue;
+}
+
+@media (max-width:768px) {
+    .feed .photo {
+        width: 40px;
+        height: 40px;
+    }
+}
+
+.content {
+    text-align: center;
+}
+
+.content > img { 
+    width: 30px;
+}

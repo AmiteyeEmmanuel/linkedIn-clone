@@ -1,0 +1,175 @@
+.signUp {
+    padding: 0;
+}
+
+
+.signUp > nav {
+    max-width: 1120px;
+    margin: auto;
+    padding: 10px 0 16px;
+    display: flex;
+    align-items: center;
+    position: relative;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+}
+
+
+.signUp > nav > a {
+    width: 200px;
+}
+
+.signUp > nav > a > img {
+    width:200px;
+    object-fit: contain;
+}
+
+
+@media (max-width:768px) {
+    .signIn > nav > a {
+        padding: 0 5px;
+    }    
+}
+
+
+.signUp__field {
+    align-items: center;
+    padding: 30px 0;
+    position: relative;
+    width: 100%;
+    max-width: 1120px;
+    margin: auto;
+}
+
+
+.signUp__field .signUp__header {
+    margin: auto;
+    align-items: center;
+}
+
+.signUp__header > h1 {
+    text-align: center;
+    justify-content: center;
+    font-size: 35px;
+    padding: 20px;
+    font-weight:lighter;
+}
+
+.signUp__field .signUp__hero > form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.signUp__field .signUp__hero > form > input {
+    width: 400px;
+    height: 20px;
+    font-size: 20px;
+    margin-bottom: 10px;
+    margin-top: 2px;
+    padding: 5px 15px;
+    border-radius: 5px;
+    border: 1px solid gray;
+}
+
+.signUp__field .signUp__hero > form > label{
+    color: #000;
+    align-self:flex-start;
+    position: relative;
+    left: 345px;
+    margin-bottom: 5px;
+    font-size: 16px;
+}
+
+.signUp__field .signUp__hero > form > span {
+    text-align: center;
+    color: #000;
+}
+
+.signUp__field .signUp__hero > form .span2, .span3 {
+    color: #0074b1;
+} 
+
+.signUp__field .signUp__hero > form > button {
+    width: 450px;
+    border: #0074b1;
+    height: 50px;
+    color: white;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: large;
+    background-color: #0074b1;
+    border-radius: 30px;
+    cursor: pointer;
+}
+
+@media (max-width:678px) {
+    .signUp__field .signUp__hero > form > input {
+        width: 300px;
+    }
+}
+
+
+.signUp__field .signUp__hero .login__or {
+    color: gray;
+    font-size: 17px;
+    margin: 10px 0;
+} 
+
+@media (max-width:768px) {
+    .signUp__field .signUp__hero .login__or {
+        font-size: 15px;
+    } 
+
+    .signUp__field .signUp__hero > form > label {
+        left: 50px;
+    }
+}
+
+.signUp__field .signUp__hero > form .button__options {
+    width: 400px;
+    background-color: #fff;
+    color: rgba(0, 0, 0, 0.6);
+    place-items: center;
+    font-weight: 600;
+    height: 40px;
+    font-size: 14px;
+    border-radius: 30px;
+    margin-bottom: 15px;
+    cursor: pointer;
+}
+
+.signUp__field .signUp__hero > form .button__options__ {
+    width: 400px;
+    border: 1px solid #000;
+    place-items: center;
+    height: 50px;
+    color: rgba(0, 0, 0, 0.9);
+    font-size: 17px;
+    background-color: #fff;
+    border-radius: 30px;
+}
+
+.signUp__field .signUp__hero > form .button__options > a  {
+    text-decoration: none;
+    color: #000;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+
+
+
+@media (max-width:768px) {
+    .signUp__field .signUp__hero > form > button{
+        width: 350px;
+    }
+
+    .signUp__field .signUp__hero > form .button__options {
+        width: 350px;
+    }
+
+    .signUp__field .signUp__hero > form .button__options__ {
+        width: 350px;
+    }
+}

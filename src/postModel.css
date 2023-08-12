@@ -1,0 +1,206 @@
+.Container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 9999;
+    color: black;
+    background-color: rgba(0, 0, 0, 0.8);
+    animation: fadeIn 0.3s;
+}
+
+ .Container .Content {
+    width: 100%;
+    max-width: 700px;
+    background-color: white;
+    height: 100%;
+    max-height: 90%;
+    overflow: initial;
+    border-radius: 5px;
+    position: relative;
+    display: flex;
+    top: 32px;
+    flex-direction: column;
+    margin: 0 auto; 
+}
+
+.Content .header {
+    display: block;
+    max-width: 650px;
+    padding: 10px 20px;
+    border-bottom: rgba(0, 0, 0, 0.16);
+    font-size: 16px;
+    line-height: 1.5;
+    color: rgba(0, 0, 0, 0.6);
+    font-weight: 400;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+@media (max-width:768px) {
+    .Container .Content {
+        width:350px;
+        height: 50%;
+    }
+
+    .Content .header {
+        max-width: 300px;
+    }
+}
+ button {
+    height: 40px;
+    width: 40px;
+    min-width: auto;
+    color: rgba(0, 0, 0, 0.6);
+}
+ 
+svg {
+    width: 15px;
+    height: 15px;
+    pointer-events: none;
+}
+
+button > img {
+    width: 15px;
+    height: 15px;
+}
+
+.sharedContent{
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    overflow-y: auto;
+    vertical-align: baseline;
+    background: transparent;
+    padding: 8px 12px;
+}
+
+.userInfo {
+    display: flex;
+     align-items: center;
+     padding: 12px 24px;
+}
+
+.userInfo > img {
+    width:40px;
+    height: 40px;
+    background-clip: content-box;
+    border: 2px solid transparent;
+    border-radius: 50%;
+    background-color: lightblue;
+}
+
+.userInfo > span {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 1.5;
+    margin-left: 5px; 
+}
+
+.sharedCreation {
+    display: flex;
+    justify-content: space-between;
+    padding: 12px 24px 12px 16px;
+}
+
+.attachAsset {
+    display: flex;
+    align-items: center;
+    padding-right: 8px;
+}
+
+.assetButton {
+    display: flex;
+    align-items: center;
+    height: 40px;
+    min-width: auto;
+    color: gray;
+    border: none;
+}
+
+.assetButton > img {
+    height: 25px;
+    width: 25px;
+    color: gray;
+}
+
+.sharedComment {
+    padding-left:8px;
+    margin-right: auto;
+    border-left: 1px solid rgba(0, 0, 0, 0.15);
+    display: flex;
+    border-color: black;
+}
+
+.sharedComment > button{
+    display: flex;
+    align-items: center;
+    height: 40px;
+    min-width: fit-content;
+    color: gray;
+    border: none;
+}
+
+.sharedComment > button > img {
+    width: 25px;
+    height: 25px;
+}
+
+.sharedComment > button > p {
+    font-size: 14px;
+    padding-left: 5px;
+}
+
+.postbutton {
+    min-width: 60px;
+    border-radius: 20px;
+    padding-left: 16px;
+    padding-right: 16px;
+    background: #0074b1;
+    color: #fff;
+    border: none ;
+}
+
+.postbutton:disabled {
+    background: initial; 
+    color: #000;
+}
+
+/* .postbutton:hover {
+    background:#0a66c2;
+} */
+
+.editor {
+    padding: 12px 2px;
+}
+
+.editor > textarea {
+    width: 100%;
+    min-height: 300px;
+    resize: none;
+    border: none;
+    font-size: 16px;
+}
+
+@media (max-width: 768px) {
+    .editor > textarea {
+        min-height: 200px;
+    }
+}
+
+.input {
+    width: 100%;
+    height: 35px;
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+.uploadImage {
+    text-align: justify;
+}
+
+.uploadImage > img {
+    width: 100%;
+}
